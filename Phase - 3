@@ -1,0 +1,28 @@
+
+
+SELECT state, district, year, MAX(rape) AS max_rapes, MAX(kidnapping_abduction) AS max_kidnappings
+FROM your_table_name
+GROUP BY state, district, year
+
+ SELECT state, district, year, MIN(rape) AS min_rapes, MIN(kidnapping_abduction) AS min_kidnappings
+FROM your_table_name
+GROUP BY state, district, year;
+
+ 
+SELECT district, MAX(dacoity) AS max_dacoity
+FROM your_new_table_name
+GROUP BY district;
+
+SELECT district, MAX(dacoity) AS max_dacoity
+FROM your_new_table_name
+GROUP BY district;
+
+SELECT district, MIN(murder) AS min_murders
+FROM your_table_name
+GROUP BY district;
+
+SELECT district, year, murder
+FROM your_table_name
+ORDER BY district, year, murder ASC;
+
+
